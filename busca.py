@@ -19,6 +19,8 @@ def mueve(files,dest):
         cmd = 'mv -vf "{}" "{}"'.format(file,dest)
         os.system(cmd)
 
+        
+# this should be resolved in a better way
 def main():
     archivos = busca(dir_to_look,find_str)
     if archivos == []:
